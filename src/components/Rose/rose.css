@@ -15,15 +15,15 @@
 /* The Card: Responsive width */
 .romantic-card {
   background: white;
-  padding: 25px;
+  padding: 12px;
   min-height: 60vh;
   border-radius: 25px;
   box-shadow: 0 10px 30px rgba(255, 182, 193, 0.4);
   text-align: center;
-  border: 2px solid #ffdee6;
+  border: 2px solid #dc5577;
   width: 100%; /* Responsive width */
   max-width: 350px; /* Limits size on larger screens */
-  margin: auto;
+
 }
 
 /* Image: Responsive GIF */

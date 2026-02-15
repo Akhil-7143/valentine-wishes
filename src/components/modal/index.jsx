@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './index.css'
-import Saidno from '../Saidno'
+import Saidno from '../Saidno/index'
 import YesCard from '../said-yes'
 import AnimatedSwitch from '../AnimatedSwitch'
 

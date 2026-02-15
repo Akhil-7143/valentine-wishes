@@ -2,6 +2,15 @@
 .rose-page {
   box-sizing: border-box;
 }
+.rose-page {
+  width: 100%;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
 
 /* The Card: Responsive width */
 .romantic-card {
@@ -97,34 +106,86 @@
   min-height: 50vh;
   width: 100%;
   padding: 10px;
+
   background-image: url('../assets/mahadev.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   border-radius: 12px;
 }
+
+/* text */
 .para {
   color: #010000;
   font-size: 2.5rem;
   font-weight: 900;
+  text-align: center;
 }
+
+/* card layout */
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  .back-btn {
-    background-color: #ff4d6d;
-    height: 35px;
-    width: 100px;
-    border: none;
-    border-radius: 5px;
-    color: aliceblue;
-    font-size: 1.5rem;
+  padding: 15px;
+}
+
+/* button */
+.card .back-btn {
+  background-color: #ff4d6d;
+  height: 35px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+  font-size: 1.2rem;
+}
+
+/* heading */
+.card h3 {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+/* 🔥 Tablet adjustments */
+@media (max-width: 768px) {
+  .para {
+    font-size: 2rem;
   }
-  h3 {
-    font-size: 1.5rem;
-    text-align: left;
+
+  .card h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* 🔥 Mobile adjustments */
+@media (max-width: 480px) {
+  .maha {
+    min-height: 40vh;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  .para {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .card .back-btn {
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
   }
 }

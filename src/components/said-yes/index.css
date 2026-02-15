@@ -1,0 +1,14 @@
+.yes-card {
+  min-height: 150px;
+  min-width: 250px;
+
+  text-align: left;
+  padding: 12px;
+}
+.click-btn {
+  border: none;
+  height: 40px;
+  width: 140px;
+  background-color: rgb(118, 210, 217);
+  border-radius: 12px;
+}

@@ -1,0 +1,130 @@
+/* Container: Center everything and prevent horizontal scrolling */
+.rose-page {
+  box-sizing: border-box;
+}
+
+/* The Card: Responsive width */
+.romantic-card {
+  background: white;
+  padding: 25px;
+  min-height: 60vh;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(255, 182, 193, 0.4);
+  text-align: center;
+  border: 2px solid #ffdee6;
+  width: 100%; /* Responsive width */
+  max-width: 350px; /* Limits size on larger screens */
+  margin: auto;
+}
+
+/* Image: Responsive GIF */
+.floating-gif {
+  width: 60%; /* Size relative to card width */
+  max-width: 180px;
+  height: auto;
+  filter: drop-shadow(0 5px 10px rgba(255, 105, 180, 0.3));
+  animation: float 3s ease-in-out infinite;
+  margin-bottom: 10px;
+}
+
+/* Typography: Smaller for mobile screens */
+.title {
+  font-family: 'Dancing Script', cursive;
+  color: #ff4d6d;
+  font-size: 1.8rem; /* Slightly smaller for mobile */
+  margin-bottom: 12px;
+  font-weight: 900;
+}
+
+.message-box {
+  font-family: 'Poppins', sans-serif;
+  color: #424242;
+  line-height: 1.5;
+  margin-left: 10px;
+  text-align: left;
+  font-size: 1.2rem; /* Better readability on small screens */
+}
+
+.highlight {
+  color: #f56c85;
+  font-weight: 600;
+  margin-top: 8px;
+  display: block; /* Ensures it sits on its own line */
+}
+
+/* Button: Larger tap target for fingers */
+.explore-btn {
+  margin-top: 20px;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 14px 30px; /* Taller for easier tapping */
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.04rem;
+  transition: 0.3s;
+  -webkit-tap-highlight-color: transparent; /* Removes blue flash on tap */
+}
+
+.explore-btn:hover {
+  transform: scale(1.05);
+  background: #ff758f;
+}
+
+/* Smooth Animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Extra small screen adjustments */
+@media (max-width: 320px) {
+  .romantic-card {
+    padding: 15px;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+}
+.maha {
+  background-color: #ff4d6d;
+  min-height: 50vh;
+  width: 100%;
+  padding: 10px;
+  background-image: url('../assets/mahadev.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+}
+.para {
+  color: #010000;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .back-btn {
+    background-color: #ff4d6d;
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+}

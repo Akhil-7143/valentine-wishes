@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/valentine-wishes/', // 👈 change this
+  base: '/valentine-wishes/', // 👈 VERY IMPORTANT
 })
